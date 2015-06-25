@@ -1,0 +1,18 @@
+
+This contains a very small syntax highlighting file for Vim users who
+are editing sensetalk files.
+
+It does not follow many of the conventions for version handling, and it
+is missing most of the keywords.
+
+You might be able to install it using something like pathogen.
+Otherwise just copy syntax/sensetalk.vim into ~/.vim/syntax.
+
+Because autodetection doesn't work you'll have to add a mode line into
+the files that you edit:
+
+    (* vim:ft=sensetalk:
+    *)
+
+It is a work in progress.  Help out if you find it useful.
+
