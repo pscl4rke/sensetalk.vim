@@ -1,5 +1,7 @@
 
 syn region senseBlockComment start="(\*" end="\*)"
+syn match senseLineComment "--.*$"
+syn match senseLineComment "//.*$"
 
 syn region senseString start=+"+ end=+"+
 
@@ -15,5 +17,6 @@ syn keyword senseStatement wait waitfor
 
 " This is the wrong way to do it: should take into account diff versions...
 hi def link senseBlockComment       Comment
+hi def link senseLineComment        Comment
 hi def link senseString             String
 hi def link senseStatement          Statement
